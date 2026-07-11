@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD 231 | Home | Mitchelle Madumere</title>
+
+    <meta name="description" content="Course home page for WDD 231 - Web Frontend Development II.">
+    <meta name="author" content="Mitchelle Madumere">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="images/logo.svg" alt="Website Logo" width="50" height="50">
+        <span>Mitchelle Madumere</span>
+    </div>
+
+    <button id="menu" aria-label="Open Navigation"></button>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="final/index.html">Final</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+    <h1>Home</h1>
+
+    <div class="top-grid">
+
+        <section class="card">
+            <h2>About Me</h2>
+
+            <p>
+                Hello! I'm <strong>Mitchelle Madumere</strong>, a Software
+                Development student passionate about building responsive,
+                accessible, and user-friendly websites.
+            </p>
+
+            <p>
+                My interests include HTML, CSS, JavaScript, data management,
+                and creating digital experiences that solve real-world problems.
+                I also enjoy learning new technologies and improving my
+                communication and collaboration skills.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>Student Photo</h2>
+
+            <img
+                src="images/profile.webp"
+                alt="Photo of Mitchelle Madumere"
+                loading="lazy">
+
+        </section>
+
+    </div>
+
+    <section class="certificate">
+
+        <h2>Web and Computer Programming Certificate</h2>
+
+        <div class="filter-buttons">
+
+            <button id="all">All Courses</button>
+
+            <button id="wdd">WDD Courses</button>
+
+            <button id="cse">CSE Courses</button>
+
+        </div>
+
+        <p id="credits"></p>
+
+        <div id="courses"></div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <div class="social">
+
+        <a href="https://github.com/mitchelle2" target="_blank">
+            <img src="images/github.svg" alt="GitHub">
+        </a>
+
+        <a href="https://www.linkedin.com/in/https://www.linkedin.com/in/mitchelle-madumere2a02/" target="_blank">
+            <img src="images/linkedin.svg" alt="LinkedIn">
+        </a>
+
+        <a href="https://x.com/" target="_blank">
+            <img src="images/twitter.svg" alt="X">
+        </a>
+
+    </div>
+
+    <p>
+        &copy;
+        <span id="year"></span>
+        Mitchelle Madumere |
+        Nigeria
+    </p>
+
+    <p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>

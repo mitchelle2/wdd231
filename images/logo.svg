@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <circle cx="40" cy="40" r="36" fill="#1d3557"></circle>
+  <text x="50%" y="57%" text-anchor="middle" font-family="Arial" font-size="26" font-weight="bold" fill="white">
+    MM
+  </text>
+</svg>

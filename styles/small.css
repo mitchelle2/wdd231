@@ -1,0 +1,273 @@
+/* ------------------------------
+   Global Styles
+------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #1d3557;
+    --secondary: #457b9d;
+    --accent: #f4a261;
+    --light: #f8f9fa;
+    --dark: #222;
+    --completed: #2a9d8f;
+    --card: #ffffff;
+    --shadow: 0 4px 10px rgba(0,0,0,.15);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* ------------------------------
+   Header
+------------------------------ */
+
+header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.logo span {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* ------------------------------
+   Navigation
+------------------------------ */
+
+#menu {
+    border: none;
+    background: none;
+    color: rgb(13, 37, 114);
+    font-size: 2rem;
+    cursor: pointer;
+    float: right;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+.navigation {
+    list-style: none;
+    display: none;
+    margin-top: 1rem;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation li {
+    border-top: 1px solid rgba(255,255,255,.2);
+}
+
+.navigation a {
+    display: block;
+    padding: .9rem;
+    color: white;
+    text-decoration: none;
+    transition: background .3s;
+}
+
+.navigation a:hover {
+    background: var(--secondary);
+}
+
+.navigation .active {
+    background: var(--accent);
+    color: black;
+    font-weight: bold;
+}
+
+/* ------------------------------
+   Main
+------------------------------ */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+}
+
+h1 {
+    margin: 1rem 0;
+}
+
+.top-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+/* ------------------------------
+   Cards
+------------------------------ */
+
+.card {
+    background: var(--card);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.card h2 {
+    background: var(--secondary);
+    color: white;
+    padding: .9rem;
+    text-align: center;
+}
+
+.card p {
+    padding: 1rem;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+/* ------------------------------
+   Certificate
+------------------------------ */
+
+.certificate {
+    margin-top: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+}
+
+.certificate h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* ------------------------------
+   Filter Buttons
+------------------------------ */
+
+.filter-buttons {
+    display: grid;
+    gap: .75rem;
+    margin-bottom: 1rem;
+}
+
+.filter-buttons button {
+    border: none;
+    background: var(--primary);
+    color: white;
+    padding: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.filter-buttons button:hover {
+    background: var(--secondary);
+}
+
+/* ------------------------------
+   Credits
+------------------------------ */
+
+#credits {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* ------------------------------
+   Course Cards
+------------------------------ */
+
+#courses {
+    display: grid;
+    gap: .75rem;
+}
+
+.course-card {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 6px;
+    background: #d1495b;
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.course-card:hover {
+    transform: translateY(-3px);
+}
+
+.completed {
+    background: var(--completed);
+}
+
+/* ------------------------------
+   Footer
+------------------------------ */
+
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social img {
+    width: 38px;
+    transition: transform .3s;
+}
+
+.social img:hover {
+    transform: scale(1.15);
+}
+
+footer p {
+    margin-top: .5rem;
+}
+
+/* ------------------------------
+   Accessibility
+------------------------------ */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button:focus,
+a:focus {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+}

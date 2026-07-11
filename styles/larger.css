@@ -1,0 +1,77 @@
+/* ======================================
+   Desktop Styles (768px and larger)
+====================================== */
+
+@media only screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    /* Hide hamburger */
+
+    #menu {
+        display: none;
+    }
+
+    /* Desktop Navigation */
+
+    nav {
+        margin-left: auto;
+    }
+
+    .navigation {
+        display: flex !important;
+        margin-top: 0;
+        gap: .5rem;
+    }
+
+    .navigation li {
+        border: none;
+    }
+
+    .navigation a {
+        padding: .75rem 1.25rem;
+        border-radius: 6px;
+    }
+
+    /* Home Grid */
+
+    .top-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    /* Certificate Buttons */
+
+    .filter-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .filter-buttons button {
+        flex: 1;
+        max-width: 220px;
+    }
+
+    /* Course Cards */
+
+    #courses {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .course-card {
+        font-size: 1.05rem;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+}
