@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Port Harcourt Chamber of Commerce | Directory</title>
+
+    <meta name="description" content="Directory of businesses that belong to the Port Harcourt Chamber of Commerce.">
+    <meta name="author" content="Mitchelle Madumere">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Port Harcourt Chamber of Commerce">
+    <meta property="og:description" content="Explore businesses and organizations in Port Harcourt.">
+    <meta property="og:image" content="images/facebook-image.jpg">
+    <meta property="og:url" content="https://yourgithubusername.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+    <div class="top-bar">
+
+        <div class="logo">
+            <img src="images/chamber_logo.png" alt="Port Harcourt Chamber Logo">
+
+            <div class="site-name">
+                <h1>Port Harcourt</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button id="menu" aria-label="Open Navigation Menu">
+            ☰
+        </button>
+
+    </div>
+
+    <nav>
+
+        <ul class="navigation">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="discover.html">Discover</a></li>
+
+            <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+
+            <li><a href="join.html">Join</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <h1>Business Directory</h1>
+
+    <div class="view-buttons">
+    <button id="grid">🔳 Grid View</button>
+    <button id="list">📋 List View</button>
+</div>
+
+    <section id="members" class="grid"></section>
+
+</main>
+
+<footer>
+
+    <section>
+        <h2>Port Harcourt Chamber of Commerce</h2>
+
+        <p>123 Aba Road</p>
+        <p>Port Harcourt, Rivers State</p>
+        <p>info@phchamber.org</p>
+        <p>+234 800 123 4567</p>
+    </section>
+
+    <section class="social">
+    <a href="https://facebook.com" target="_blank">
+        <img src="images/facebook.svg" alt="Facebook">
+    </a>
+
+    <a href="https://linkedin.com" target="_blank">
+        <img src="images/linkedin.svg" alt="LinkedIn">
+    </a>
+
+    <a href="https://youtube.com" target="_blank">
+        <img src="images/youtube.svg" alt="YouTube">
+    </a>
+</section>
+
+    <section>
+        <p>
+            &copy; <span id="year"></span>
+            Mitchelle Madumere | WDD 231
+        </p>
+
+        <p id="lastModified"></p>
+    </section>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "PH Tech Solutions",
+      "address": "15 Aba Road, Port Harcourt",
+      "phone": "+234 803 555 1122",
+      "website": "https://www.phtechsolutions.com",
+      "image": "business1.jpg",
+      "membership": 3,
+      "industry": "Information Technology"
+    },
+    {
+      "name": "Rivers Fresh Market",
+      "address": "42 GRA Phase 2, Port Harcourt",
+      "phone": "+234 803 555 2233",
+      "website": "https://www.riversfreshmarket.com",
+      "image": "business2.jpg",
+      "membership": 2,
+      "industry": "Retail"
+    },
+    {
+      "name": "Delta Logistics Ltd",
+      "address": "8 Trans Amadi Industrial Layout",
+      "phone": "+234 803 555 3344",
+      "website": "https://www.deltalogistics.com",
+      "image": "business3.jpg",
+      "membership": 3,
+      "industry": "Logistics"
+    },
+    {
+      "name": "Garden City Hotel",
+      "address": "31 Stadium Road",
+      "phone": "+234 803 555 4455",
+      "website": "https://www.gardencityhotel.com",
+      "image": "business4.jpg",
+      "membership": 2,
+      "industry": "Hospitality"
+    },
+    {
+      "name": "Harcourt Foods",
+      "address": "21 Woji Road",
+      "phone": "+234 803 555 5566",
+      "website": "https://www.harcourtfoods.com",
+      "image": "business5.jpg",
+      "membership": 1,
+      "industry": "Food Services"
+    },
+    {
+      "name": "Blue Ocean Travels",
+      "address": "10 Olu Obasanjo Road",
+      "phone": "+234 803 555 6677",
+      "website": "https://www.blueoceantravels.com",
+      "image": "business6.jpg",
+      "membership": 2,
+      "industry": "Travel Agency"
+    },
+    {
+      "name": "Prime Medical Centre",
+      "address": "55 Ada George Road",
+      "phone": "+234 803 555 7788",
+      "website": "https://www.primemedical.com",
+      "image": "business7.jpg",
+      "membership": 3,
+      "industry": "Healthcare"
+    }
+  ]
+}
