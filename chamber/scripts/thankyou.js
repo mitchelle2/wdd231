@@ -1,0 +1,19 @@
+const params = new URLSearchParams(window.location.search);
+
+document.querySelector("#firstName").textContent =
+    params.get("firstname") || "Not provided";
+
+document.querySelector("#lastName").textContent =
+    params.get("lastname") || "Not provided";
+
+document.querySelector("#email").textContent =
+    params.get("email") || "Not provided";
+
+document.querySelector("#phone").textContent =
+    params.get("phone") || "Not provided";
+
+document.querySelector("#organization").textContent =
+    params.get("organization") || "Not provided";
+
+document.querySelector("#timestamp").textContent =
+    params.get("timestamp") || "Not provided";
