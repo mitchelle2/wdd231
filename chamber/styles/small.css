@@ -55,21 +55,13 @@ header {
     font-size: .95rem;
 }
 
-/* Hamburger */
-
-#menu {
-    background: transparent;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-}
 
 /* =======================
    Navigation
 ======================= */
 
 #menu {
+    background: transparent;
     display: block;
     background: none;
     border: none;
