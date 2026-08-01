@@ -1,7 +1,7 @@
 /* Google Font Defaults */
 :root {
     --primary: #0B3C5D;
-    --secondary: #F4B400;
+    --secondary: #645736;
     --background: #FFFFFF;
     --light: #F5F5F5;
     --text: #333333;
@@ -147,14 +147,7 @@ main h1 {
     gap: 1rem;
 }
 
-.member-card {
-    background: white;
-    border-radius: 12px;
-    padding: 1.5rem;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,.1);
-    transition: transform .3s ease, box-shadow .3s ease;
-}
+
 
 .member-card:hover {
     transform: translateY(-5px);
@@ -164,9 +157,9 @@ main h1 {
 
 
 .member-card h2 {
-    color: var(--primary-color);
+    color: var(--primary);
     margin-bottom: .5rem;
-    font-family: var(--heading-font);
+    font-family: "Poppins", sans-serif;
 }
 
 .member-card p {
@@ -175,12 +168,12 @@ main h1 {
 }
 
 .member-card a {
-    color: var(--primary-color);
+    color: var(--primary);
     font-weight: bold;
 }
 
 .member-card a:hover {
-    color: var(--secondary-color);
+    color: var(--secondary);
 }
 
 /* ---------- LIST VIEW ---------- */
@@ -310,24 +303,22 @@ form textarea:focus {
 ========================== */
 
 .member-card {
-
     background: white;
-
     border-left: 6px solid var(--secondary);
-
-    padding: 1rem;
-
+    border-radius: 12px;
+    padding: 1.5rem;
     margin-bottom: 1rem;
-
-    border-radius: 8px;
-
-    box-shadow: 0 3px 10px rgba(0,0,0,.08);
-
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,.1);
     opacity: 0;
-
     transform: translateY(30px);
-
     animation: fadeUp .8s forwards;
+}
+    
+
+.member-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
 }
 
 .member-card:nth-child(2){
@@ -369,8 +360,8 @@ form textarea:focus {
     color:var(--secondary);
 
     font-weight:bold;
+    text-decoration: none;
 
-    text-decoration:none;
 
 }
 
