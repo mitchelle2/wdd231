@@ -149,13 +149,6 @@ main h1 {
 
 
 
-.member-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,.15);
-}
-
-
-
 .member-card h2 {
     color: var(--primary);
     margin-bottom: .5rem;
@@ -172,9 +165,7 @@ main h1 {
     font-weight: bold;
 }
 
-.member-card a:hover {
-    color: var(--secondary);
-}
+
 
 /* ---------- LIST VIEW ---------- */
 
@@ -368,7 +359,7 @@ form textarea:focus {
 .member-card a:hover{
 
     text-decoration:underline;
-
+    color: var(--secondary);
 }
 
 @keyframes fadeUp{
