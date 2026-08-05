@@ -17,9 +17,10 @@
 
 #discover-grid {
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
 
-    /* Mobile Layout */
     grid-template-areas:
         "card1"
         "card2"
@@ -50,11 +51,7 @@
     margin: 0;
 }
 
-.discover-card img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
+
 
 .discover-card address {
     padding: .8rem 1rem;
@@ -77,14 +74,21 @@
     cursor: pointer;
 }
 
+.discover-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
 /* ===============================
    TABLET (641px - 1024px)
 ================================= */
 
-@media (min-width: 641px) {
+@media screen and (min-width: 641px) and (max-width: 1024px) {
 
     #discover-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
 
         grid-template-areas:
             "card1 card2"
@@ -93,21 +97,13 @@
             "card7 card8";
     }
 
-    .discover-card img {
-        transition: transform .3s ease, filter .3s ease;
-    }
-
-    .discover-card img:hover {
-        transform: scale(1.05);
-        filter: brightness(110%);
-    }
 }
 
 /* ===============================
    DESKTOP (1025px and above)
 ================================= */
 
-@media (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
 
     #discover-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -118,4 +114,23 @@
             "card5 card6 card7"
             "card8 card8 card8";
     }
+
+}
+
+/* ===============================
+   IMAGE HOVER EFFECT
+   (Tablet & Desktop Only)
+================================= */
+
+@media screen and (min-width: 641px) {
+
+    .discover-card img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .discover-card img:hover {
+        transform: scale(1.05);
+        filter: brightness(110%);
+    }
+
 }
