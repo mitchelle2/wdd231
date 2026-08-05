@@ -54,7 +54,7 @@ const currentVisit = Date.now();
 if (!lastVisit) {
 
     visitMessage.textContent =
-        "Welcome! Let us know if you have any questions.";
+        "Welcome to Port Harcourt, the Garden City! We hope you enjoy exploring our community.";
 
 } else {
 
@@ -64,17 +64,17 @@ if (!lastVisit) {
     if (daysBetween < 1) {
 
         visitMessage.textContent =
-            "Back so soon! Awesome!";
+            "Welcome back! There's always something new to discover in the Garden City.";
 
     } else if (daysBetween === 1) {
 
         visitMessage.textContent =
-            "You last visited 1 day ago.";
+            "Welcome back! Your last visit was 1 day ago.";
 
     } else {
 
         visitMessage.textContent =
-            `You last visited ${daysBetween} days ago.`;
+            `Welcome back! Your last visit was ${daysBetween} days ago.`;
 
     }
 
