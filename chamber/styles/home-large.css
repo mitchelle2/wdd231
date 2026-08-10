@@ -1,0 +1,81 @@
+/* =========================================
+   PORT HARCOURT CHAMBER
+   HOME PAGE - LARGE SCREENS
+   ========================================= */
+
+@media screen and (min-width: 700px) {
+
+    /* HERO */
+
+    .home-hero {
+        margin-bottom: 3rem;
+    }
+
+    .home-hero img {
+        min-height: 450px;
+    }
+
+    .hero-content {
+        left: 3rem;
+        right: auto;
+        bottom: 3rem;
+
+        max-width: 550px;
+
+        padding: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+
+    /* GENERAL SECTIONS */
+
+    .home-section {
+        margin: 3rem 2rem;
+    }
+
+
+    /* EVENTS */
+
+    .events-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* WEATHER */
+
+    .weather-section {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+        align-items: start;
+    }
+
+    .weather-section > h2 {
+        grid-column: 1 / -1;
+    }
+
+    .weather-section > h3 {
+        grid-column: 2;
+    }
+
+    .weather-current {
+        grid-column: 1;
+        grid-row: 2 / span 2;
+    }
+
+    .forecast-grid {
+        grid-column: 2;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* SPOTLIGHTS */
+
+    .spotlight-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}

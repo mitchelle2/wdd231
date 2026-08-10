@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Port Harcourt Chamber of Commerce | Home</title>
+
+    <meta name="description"
+        content="Welcome to the Port Harcourt Chamber of Commerce. Discover local businesses, events, resources, and opportunities in Port Harcourt.">
+    <meta name="author" content="Mitchelle Madumere">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="Port Harcourt Chamber of Commerce | Home">
+    <meta property="og:description"
+        content="Connect with businesses, discover events, and explore opportunities through the Port Harcourt Chamber of Commerce.">
+    <meta property="og:image"
+        content="https://mitchelle2.github.io/wdd231/chamber/images/facebook-image.jpg">
+    <meta property="og:url"
+        content="https://mitchelle2.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <link rel="stylesheet" href="styles/home-small.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="top-bar">
+
+            <div class="logo">
+                <img
+                    src="images/chamber_logo.webp"
+                    alt="Port Harcourt Chamber Logo"
+                    width="100"
+                    height="100">
+
+                <div class="site-name">
+                    <h2>Port Harcourt</h2>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+
+            <button
+                id="menu"
+                type="button"
+                aria-label="Open Navigation Menu">
+                ☰
+            </button>
+
+        </div>
+
+        <nav aria-label="Main Navigation">
+
+            <ul class="navigation">
+
+                <li>
+                    <a href="index.html"
+                       class="active"
+                       aria-current="page">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="discover.html">
+                        Discover
+                    </a>
+                </li>
+
+                <li>
+                    <a href="directory.html">
+                        Directory
+                    </a>
+                </li>
+
+                <li>
+                    <a href="join.html">
+                        Join
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+    <section class="hero">
+
+        <img
+            src="images/chamber-hero.webp"
+            alt="Port Harcourt business district"
+            width="1200"
+            height="600">
+
+        <div class="hero-content">
+
+            <h1>Grow Your Business in Port Harcourt</h1>
+
+            <p>
+                Connecting local businesses, entrepreneurs, and
+                organizations to strengthen commerce in Port Harcourt.
+            </p>
+
+            <a href="join.html" class="hero-button">
+                Join the Chamber
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CURRENT EVENTS -->
+
+    <section class="home-section events">
+
+        <h2>Current Events</h2>
+
+        <article class="event-card">
+
+            <h3>Port Harcourt Business Networking Event</h3>
+
+            <p>
+                Connect with local business owners and professionals,
+                share ideas, and discover new opportunities.
+            </p>
+
+            <p>
+                <strong>Date:</strong> August 20, 2026
+            </p>
+
+            <p>
+                <strong>Location:</strong> Port Harcourt
+            </p>
+
+        </article>
+
+    </section>
+
+
+    <!-- WEATHER -->
+
+    <section class="home-section weather">
+
+        <h2>Port Harcourt Weather</h2>
+
+        <div class="weather-current">
+
+            <div>
+                <h3>Current Weather</h3>
+
+                <p>
+                    Temperature:
+                    <strong>
+                        <span id="current-temp">Loading...</span>
+                    </strong>
+                </p>
+
+                <p>
+                    Conditions:
+                    <span id="weather-description">
+                        Loading...
+                    </span>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <h3>3-Day Forecast</h3>
+
+        <div id="forecast" class="forecast-grid"></div>
+
+    </section>
+
+
+    <!-- COMPANY SPOTLIGHTS -->
+
+    <section class="home-section spotlights">
+
+        <h2>Business Spotlights</h2>
+
+        <div id="spotlight-container" class="spotlight-grid">
+
+            <p>Loading business spotlights...</p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+    <footer>
+
+        <section>
+
+            <h2>Port Harcourt Chamber of Commerce</h2>
+
+            <p>123 Aba Road</p>
+            <p>Port Harcourt, Rivers State</p>
+            <p>info@phchamber.org</p>
+            <p>+234 800 123 4567</p>
+
+        </section>
+
+
+        <section class="social">
+
+            <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img
+                    src="images/facebook.svg"
+                    alt="Facebook"
+                    width="40"
+                    height="40">
+            </a>
+
+            <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img
+                    src="images/linkedin.svg"
+                    alt="LinkedIn"
+                    width="40"
+                    height="40">
+            </a>
+
+            <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img
+                    src="images/youtube.svg"
+                    alt="YouTube"
+                    width="40"
+                    height="40">
+            </a>
+
+        </section>
+
+
+        <section>
+
+            <p>
+                &copy;
+                <span id="year"></span>
+                Mitchelle Madumere | WDD 231
+            </p>
+
+            <p id="lastModified"></p>
+
+        </section>
+
+    </footer>
+
+</body>
+</html>

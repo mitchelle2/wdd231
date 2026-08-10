@@ -1,0 +1,232 @@
+/* =========================================
+   PORT HARCOURT CHAMBER
+   HOME PAGE - MOBILE
+   ========================================= */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.home-hero {
+    position: relative;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.home-hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+
+    padding: 1.25rem;
+
+    background: rgba(0, 0, 0, 0.72);
+    color: white;
+}
+
+.hero-content h2 {
+    margin-top: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero-content p {
+    line-height: 1.6;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+
+    background-color: #c2410c;
+    color: white;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    border-radius: 4px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #9a3412;
+}
+
+
+/* =========================================
+   GENERAL HOME SECTIONS
+   ========================================= */
+
+.home-section {
+    margin: 2rem 1rem;
+}
+
+.home-section h2 {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
+}
+
+
+/* =========================================
+   EVENTS
+   ========================================= */
+
+.events-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.event-card {
+    padding: 1.25rem;
+
+    background-color: #f4f4f4;
+    border-left: 5px solid #1e3a8a;
+
+    border-radius: 5px;
+}
+
+.event-card h3 {
+    margin-top: 0;
+    color: #1e3a8a;
+}
+
+.event-date {
+    font-weight: 700;
+    color: #c2410c;
+}
+
+
+/* =========================================
+   WEATHER
+   ========================================= */
+
+.weather-section {
+    padding: 1.5rem;
+
+    background-color: #f4f4f4;
+
+    border-radius: 6px;
+}
+
+.weather-current {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.weather-icon {
+    font-size: 3rem;
+}
+
+#current-temperature {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+#weather-description {
+    margin-top: 0.4rem;
+    text-transform: capitalize;
+}
+
+.forecast-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.forecast-card {
+    padding: 1rem;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.forecast-card h3 {
+    color: #1e3a8a;
+    margin-top: 0;
+}
+
+.forecast-temperature {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   SPOTLIGHTS
+   ========================================= */
+
+.spotlight-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    padding: 1.25rem;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    text-align: center;
+}
+
+.spotlight-card img {
+    display: block;
+
+    width: 100%;
+    max-width: 150px;
+    height: 100px;
+
+    object-fit: contain;
+
+    margin: 0 auto 1rem;
+}
+
+.spotlight-card h3 {
+    color: #1e3a8a;
+    font-family: "Poppins", sans-serif;
+}
+
+.spotlight-card a {
+    color: #1e3a8a;
+    font-weight: 600;
+}
+
+.membership-level {
+    display: inline-block;
+
+    padding: 0.35rem 0.7rem;
+
+    background-color: #1e3a8a;
+    color: white;
+
+    border-radius: 4px;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.weather-icon img {
+    width: 80px;
+    height: 80px;
+}
