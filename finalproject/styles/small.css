@@ -1,0 +1,992 @@
+/* =========================
+   REMOTE CAREER HUB
+   MOBILE STYLES
+   ========================= */
+
+/* ---------- Base ---------- */
+
+:root {
+    --primary: #1E3A8A;
+    --secondary: #F97316;
+    --white: #FFFFFF;
+    --light-gray: #F4F4F4;
+    --dark-gray: #333333;
+    --border: #D9D9D9;
+    --shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: var(--dark-gray);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* ---------- Header ---------- */
+
+.site-header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border);
+}
+
+.header-container {
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.logo-icon {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.1;
+}
+
+.logo-text span {
+    color: var(--secondary);
+}
+
+.menu-button {
+    border: none;
+    background: transparent;
+    color: var(--primary);
+    font-size: 2rem;
+    line-height: 1;
+    padding: 0.35rem;
+    cursor: pointer;
+}
+
+.site-nav {
+    grid-column: 1 / -1;
+}
+
+.navigation {
+    display: none;
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+    border-top: 1px solid var(--border);
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation li {
+    border-bottom: 1px solid var(--border);
+}
+
+.navigation a {
+    display: block;
+    padding: 0.9rem 0.5rem;
+    color: var(--primary);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+    background-color: var(--light-gray);
+    color: var(--secondary);
+}
+
+.navigation a.active {
+    color: var(--secondary);
+    border-left: 4px solid var(--secondary);
+    padding-left: calc(0.5rem - 4px);
+}
+
+
+/* ---------- General Sections ---------- */
+
+.section-container {
+    width: min(92%, 1100px);
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.section-label {
+    margin-bottom: 0.5rem;
+    color: var(--secondary);
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.section-heading {
+    margin-bottom: 2rem;
+}
+
+
+/* ---------- Hero ---------- */
+
+.hero {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 4rem 1rem;
+}
+
+.hero-content {
+    width: min(100%, 1100px);
+    margin: 0 auto;
+}
+
+.eyebrow {
+    margin-bottom: 1rem;
+    color: #FFD6BD;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.hero h1 {
+    margin-bottom: 1.25rem;
+    font-size: clamp(2.2rem, 9vw, 4.5rem);
+}
+
+.hero h1 span {
+    display: block;
+    color: #FFD6BD;
+}
+
+.hero-text {
+    max-width: 650px;
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: flex-start;
+}
+
+
+/* ---------- Buttons ---------- */
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.25rem;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.button:hover,
+.button:focus {
+    transform: translateY(-2px);
+}
+
+.primary-button {
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+.primary-button:hover,
+.primary-button:focus {
+    background-color: #D95F0B;
+}
+
+.secondary-button {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+    background-color: var(--light-gray);
+}
+
+
+/* ---------- Introduction ---------- */
+
+.intro {
+    text-align: center;
+}
+
+.intro h2 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.intro > p:last-child {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* ---------- Resources ---------- */
+
+.resources {
+    background-color: var(--light-gray);
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.resource-card {
+    padding: 1.5rem;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.resource-icon {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.resource-card h3 {
+    margin-bottom: 0.75rem;
+    color: var(--primary);
+}
+
+.resource-card p {
+    margin-bottom: 1rem;
+}
+
+.resource-card a {
+    color: var(--primary);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.resource-card a:hover,
+.resource-card a:focus {
+    color: var(--secondary);
+}
+
+
+/* ---------- Call to Action ---------- */
+
+.cta {
+    padding: 4rem 1rem;
+    background-color: var(--secondary);
+    color: var(--white);
+    text-align: center;
+}
+
+.cta-content {
+    width: min(100%, 750px);
+    margin: 0 auto;
+}
+
+.cta h2 {
+    font-size: 2rem;
+}
+
+.cta .button {
+    margin-top: 0.5rem;
+}
+
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+    background-color: #172B63;
+    color: var(--white);
+    padding: 3rem 1rem 1rem;
+}
+
+.footer-container {
+    width: min(100%, 1100px);
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+}
+
+.site-footer h2 {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.site-footer p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.footer-links a,
+.footer-project a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus,
+.footer-project a:hover,
+.footer-project a:focus {
+    color: #FFD6BD;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    width: min(100%, 1100px);
+    margin: 2rem auto 0;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    font-size: 0.9rem;
+}
+
+
+/* ---------- Accessibility ---------- */
+
+:focus-visible {
+    outline: 3px solid var(--secondary);
+    outline-offset: 3px;
+}
+
+/* =================================
+   OPPORTUNITIES PAGE
+================================= */
+
+.page-header {
+    background: var(--light-gray);
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.page-header h1 {
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.section-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Opportunities section */
+
+.opportunities-section {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+
+/* Filter */
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.filter-container label {
+    font-weight: 700;
+}
+
+#category-filter {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background: white;
+    font: inherit;
+}
+
+
+/* Results message */
+
+#results-message {
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+
+/* Opportunity cards */
+
+.opportunities-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.opportunity-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-category {
+    display: inline-block;
+    margin: 0 0 0.75rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    background: var(--primary);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.opportunity-card h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.company {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.opportunity-card p {
+    line-height: 1.6;
+}
+
+.learn-more {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--primary);
+    color: white;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.learn-more:hover,
+.learn-more:focus {
+    opacity: 0.9;
+}
+
+
+/* Loading message */
+
+#loading-message {
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/* =================================
+   MODAL
+================================= */
+
+#opportunity-modal {
+    width: min(90%, 600px);
+    max-height: 85vh;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#opportunity-modal::backdrop {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.modal-content {
+    position: relative;
+    padding: 2rem;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    opacity: 0.85;
+}
+
+.modal-content h2 {
+    padding-right: 2.5rem;
+}
+
+.modal-content dl {
+    margin-top: 1.5rem;
+}
+
+.modal-content dt {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.modal-content dd {
+    margin-left: 0;
+    margin-top: 0.25rem;
+    line-height: 1.5;
+}
+
+/* =================================
+   OPPORTUNITIES - LARGER SCREENS
+================================= */
+
+@media screen and (min-width: 641px) {
+
+    .page-header {
+        padding: 5rem 1rem;
+    }
+
+    .filter-container {
+        max-width: 400px;
+    }
+
+    #category-filter {
+        width: 100%;
+    }
+
+    .opportunities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media screen and (min-width: 1025px) {
+
+    .opportunities-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .opportunity-card {
+        transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+
+    .opportunity-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+}
+
+/* =================================
+   OPPORTUNITIES PAGE
+================================= */
+
+.page-header {
+    background: var(--light-gray, #f3f5f7);
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.page-header h1 {
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.section-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Opportunities section */
+
+.opportunities-section {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+
+/* Filter */
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.filter-container label {
+    font-weight: 700;
+}
+
+#category-filter {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background: white;
+    font: inherit;
+}
+
+
+/* Results message */
+
+#results-message {
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+
+/* Opportunity cards */
+
+.opportunities-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.opportunity-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-category {
+    display: inline-block;
+    margin: 0 0 0.75rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    background: var(--primary);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.opportunity-card h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.company {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.opportunity-card p {
+    line-height: 1.6;
+}
+
+.learn-more {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--primary);
+    color: white;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.learn-more:hover,
+.learn-more:focus {
+    opacity: 0.9;
+}
+
+
+/* Loading message */
+
+#loading-message {
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/* =================================
+   MODAL
+================================= */
+
+#opportunity-modal {
+    width: min(90%, 600px);
+    max-height: 85vh;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#opportunity-modal::backdrop {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.modal-content {
+    position: relative;
+    padding: 2rem;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    opacity: 0.85;
+}
+
+.modal-content h2 {
+    padding-right: 2.5rem;
+}
+
+.modal-content dl {
+    margin-top: 1.5rem;
+}
+
+.modal-content dt {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.modal-content dd {
+    margin-left: 0;
+    margin-top: 0.25rem;
+    line-height: 1.5;
+}
+
+/* =================================
+   GET STARTED PAGE
+================================= */
+
+.contact-section {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.contact-intro {
+    max-width: 750px;
+    margin-bottom: 2rem;
+}
+
+.contact-intro h2 {
+    margin-bottom: 1rem;
+}
+
+.contact-intro p {
+    line-height: 1.7;
+}
+
+
+/* Form */
+
+.career-form {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.career-form fieldset {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #d5d5d5;
+    border-radius: 10px;
+}
+
+.career-form legend {
+    padding: 0 0.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.career-form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.career-form input,
+.career-form select,
+.career-form textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0.5rem;
+    padding: 0.8rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background: white;
+    color: #222;
+    font: inherit;
+}
+
+.career-form textarea {
+    resize: vertical;
+}
+
+.career-form input:focus,
+.career-form select:focus,
+.career-form textarea:focus {
+    outline: 3px solid rgba(30, 58, 138, 0.25);
+    border-color: var(--primary, #1e3a8a);
+}
+
+.form-submit {
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--primary, #1e3a8a);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.form-submit:hover,
+.form-submit:focus {
+    background: var(--secondary, #f97316);
+}
+
+/* ================================
+   THANK YOU PAGE
+================================ */
+
+.submission-card {
+    max-width: 700px;
+    margin: 2rem auto 4rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.submission-card h2 {
+    margin-bottom: 1.5rem;
+}
+
+#submission-details {
+    margin-bottom: 2rem;
+}
+
+#submission-details p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+#submission-details strong {
+    display: inline-block;
+    margin-right: 0.35rem;
+}
+
+.submission-card .primary-button {
+    display: inline-block;
+    text-decoration: none;
+}

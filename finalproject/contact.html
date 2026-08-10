@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Get Started | Remote Career Hub</title>
+
+    <meta name="description"
+        content="Get started with Remote Career Hub by sharing your career goals and exploring resources for building a successful remote career.">
+
+    <meta name="author" content="Mitchelle Madumere">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Get Started | Remote Career Hub">
+    <meta property="og:description"
+        content="Take the next step toward building your remote career with Remote Career Hub.">
+    <meta property="og:image"
+        content="https://mitchelle2.github.io/wdd231/final/images/social-preview.jpg">
+    <meta property="og:url"
+        content="https://mitchelle2.github.io/wdd231/final/contact.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/contact.js" type="module"></script>
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a class="logo"
+           href="index.html"
+           aria-label="Remote Career Hub Home">
+
+            <span class="logo-icon">R</span>
+
+            <span class="logo-text">
+                <strong>Remote Career</strong>
+                <span>Hub</span>
+            </span>
+
+        </a>
+
+        <button
+            id="menu"
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="site-nav" aria-label="Main navigation">
+
+            <ul class="navigation">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="opportunities.html">
+                        Opportunities
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html"
+                       class="active"
+                       aria-current="page">
+                        Get Started
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="page-header">
+
+        <div class="section-container">
+
+            <p class="section-label">
+                TAKE THE NEXT STEP
+            </p>
+
+            <h1>
+                Get Started With Your Remote Career
+            </h1>
+
+            <p>
+                Tell us a little about your career goals and the type
+                of remote work you are interested in. This will help
+                you identify useful opportunities and resources.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="contact-section section-container">
+
+        <div class="contact-intro">
+
+            <h2>
+                Tell Us About Your Goals
+            </h2>
+
+            <p>
+                Whether you are searching for your first remote role,
+                changing careers, or developing new skills, taking
+                the time to define your goals is a useful first step.
+            </p>
+
+        </div>
+
+
+        <form
+            class="career-form"
+            action="thankyou.html"
+            method="get">
+
+            <fieldset>
+
+                <legend>
+                    Your Information
+                </legend>
+
+                <label for="first-name">
+                    First Name
+                    <input
+                        type="text"
+                        id="first-name"
+                        name="first-name"
+                        autocomplete="given-name"
+                        required>
+                </label>
+
+
+                <label for="last-name">
+                    Last Name
+                    <input
+                        type="text"
+                        id="last-name"
+                        name="last-name"
+                        autocomplete="family-name"
+                        required>
+                </label>
+
+
+                <label for="email">
+                    Email Address
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required>
+                </label>
+
+            </fieldset>
+
+
+            <fieldset>
+
+                <legend>
+                    Career Goals
+                </legend>
+
+
+                <label for="career-field">
+                    Career Field
+                    <select
+                        id="career-field"
+                        name="career-field"
+                        required>
+
+                        <option value="" selected disabled>
+                            Select a career field
+                        </option>
+
+                        <option value="customer-support">
+                            Customer Support
+                        </option>
+
+                        <option value="data-administration">
+                            Data & Administration
+                        </option>
+
+                        <option value="technology">
+                            Technology
+                        </option>
+
+                        <option value="marketing">
+                            Marketing
+                        </option>
+
+                        <option value="writing">
+                            Writing
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+                </label>
+
+
+                <label for="experience">
+                    Remote Work Experience
+                    <select
+                        id="experience"
+                        name="experience"
+                        required>
+
+                        <option value="" selected disabled>
+                            Select your experience level
+                        </option>
+
+                        <option value="beginner">
+                            I am new to remote work
+                        </option>
+
+                        <option value="some-experience">
+                            I have some remote experience
+                        </option>
+
+                        <option value="experienced">
+                            I have significant remote experience
+                        </option>
+
+                    </select>
+                </label>
+
+
+                <label for="goals">
+                    Tell Us About Your Career Goals
+                    <textarea
+                        id="goals"
+                        name="goals"
+                        rows="6"
+                        required></textarea>
+                </label>
+
+            </fieldset>
+
+
+            <button
+                class="form-submit"
+                type="submit">
+                Get Started
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h2>
+                Remote Career Hub
+            </h2>
+
+            <p>
+                Helping job seekers find opportunities and build
+                successful remote careers.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h2>
+                Quick Links
+            </h2>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="opportunities.html">
+                Opportunities
+            </a>
+
+            <a href="contact.html">
+                Get Started
+            </a>
+
+            <a href="attributions.html">
+                Attributions
+            </a>
+
+        </div>
+
+
+        <div class="footer-project">
+
+            <h2>
+                WDD 231 Final Project
+            </h2>
+
+            <p>
+                Created by Mitchelle Madumere
+            </p>
+
+            <a href="#"
+               target="_blank"
+               rel="noopener">
+                JavaScript Demonstration Video
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy;
+            <span id="current-year"></span>
+            Remote Career Hub | Mitchelle Madumere
+        </p>
+
+        <p id="last-modified"></p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

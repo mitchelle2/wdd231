@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "title": "Customer Support Representative",
+        "company": "Remote Connect",
+        "location": "Remote",
+        "type": "Full-time",
+        "category": "Customer Support",
+        "salary": "$450–$700 per month",
+        "description": "Assist customers through email, chat, and phone while providing professional and helpful support."
+    },
+    {
+        "id": 2,
+        "title": "Data Entry Specialist",
+        "company": "Digital Assist",
+        "location": "Remote",
+        "type": "Full-time",
+        "category": "Data & Administration",
+        "salary": "$400–$650 per month",
+        "description": "Enter, organize, and maintain accurate information using spreadsheets and online databases."
+    },
+    {
+        "id": 3,
+        "title": "Virtual Assistant",
+        "company": "WorkFlow Solutions",
+        "location": "Remote",
+        "type": "Part-time",
+        "category": "Administration",
+        "salary": "$500–$800 per month",
+        "description": "Support remote teams with scheduling, email management, research, and administrative tasks."
+    },
+    {
+        "id": 4,
+        "title": "Administrative Assistant",
+        "company": "Global Office Hub",
+        "location": "Remote",
+        "type": "Full-time",
+        "category": "Administration",
+        "salary": "$500–$750 per month",
+        "description": "Provide administrative support, organize documents, manage schedules, and assist with daily operations."
+    },
+    {
+        "id": 5,
+        "title": "Content Writer",
+        "company": "Creative Remote Media",
+        "location": "Remote",
+        "type": "Contract",
+        "category": "Writing",
+        "salary": "$400–$900 per month",
+        "description": "Create clear and engaging articles, website content, and other written materials for online audiences."
+    },
+    {
+        "id": 6,
+        "title": "Social Media Assistant",
+        "company": "Digital Growth Agency",
+        "location": "Remote",
+        "type": "Part-time",
+        "category": "Marketing",
+        "salary": "$350–$650 per month",
+        "description": "Help manage social media content, scheduling, audience engagement, and basic performance reporting."
+    },
+    {
+        "id": 7,
+        "title": "Junior Web Developer",
+        "company": "WebWorks Studio",
+        "location": "Remote",
+        "type": "Full-time",
+        "category": "Technology",
+        "salary": "$600–$1,000 per month",
+        "description": "Assist with building, testing, and maintaining responsive websites using HTML, CSS, and JavaScript."
+    },
+    {
+        "id": 8,
+        "title": "Technical Support Specialist",
+        "company": "Cloud Support Services",
+        "location": "Remote",
+        "type": "Full-time",
+        "category": "Technology",
+        "salary": "$600–$950 per month",
+        "description": "Help customers troubleshoot technical problems and provide clear solutions through remote support."
+    },
+    {
+        "id": 9,
+        "title": "Sales Representative",
+        "company": "Remote Sales Group",
+        "location": "Remote",
+        "type": "Full-time",
+        "category": "Sales",
+        "salary": "$450–$900 per month",
+        "description": "Communicate with potential customers, explain products and services, and maintain strong customer relationships."
+    },
+    {
+        "id": 10,
+        "title": "Graphic Designer",
+        "company": "Creative Cloud Studio",
+        "location": "Remote",
+        "type": "Contract",
+        "category": "Design",
+        "salary": "$500–$1,000 per month",
+        "description": "Create digital graphics, marketing materials, social media visuals, and other branded content."
+    },
+    {
+        "id": 11,
+        "title": "Digital Marketing Assistant",
+        "company": "Online Growth Partners",
+        "location": "Remote",
+        "type": "Full-time",
+        "category": "Marketing",
+        "salary": "$450–$800 per month",
+        "description": "Support digital marketing campaigns through content scheduling, research, email marketing, and reporting."
+    },
+    {
+        "id": 12,
+        "title": "Bookkeeping Assistant",
+        "company": "Virtual Finance Team",
+        "location": "Remote",
+        "type": "Part-time",
+        "category": "Finance",
+        "salary": "$400–$750 per month",
+        "description": "Assist with financial records, invoices, spreadsheets, and routine bookkeeping tasks."
+    },
+    {
+        "id": 13,
+        "title": "Project Coordinator",
+        "company": "Remote Project Partners",
+        "location": "Remote",
+        "type": "Full-time",
+        "category": "Project Management",
+        "salary": "$550–$900 per month",
+        "description": "Coordinate project tasks, communicate with team members, track deadlines, and maintain project documentation."
+    },
+    {
+        "id": 14,
+        "title": "Online Research Assistant",
+        "company": "Research Connect",
+        "location": "Remote",
+        "type": "Part-time",
+        "category": "Research",
+        "salary": "$350–$700 per month",
+        "description": "Conduct online research, organize findings, verify information, and prepare concise research summaries."
+    },
+    {
+        "id": 15,
+        "title": "Email Support Specialist",
+        "company": "Customer Care Online",
+        "location": "Remote",
+        "type": "Full-time",
+        "category": "Customer Support",
+        "salary": "$400–$700 per month",
+        "description": "Respond to customer questions through email while maintaining accurate records and professional communication."
+    },
+    {
+        "id": 16,
+        "title": "Quality Assurance Tester",
+        "company": "Digital Quality Labs",
+        "location": "Remote",
+        "type": "Contract",
+        "category": "Technology",
+        "salary": "$500–$900 per month",
+        "description": "Test websites and digital applications, identify problems, document issues, and help improve user experiences."
+    },
+    {
+        "id": 17,
+        "title": "SEO Assistant",
+        "company": "Search Growth Agency",
+        "location": "Remote",
+        "type": "Part-time",
+        "category": "Marketing",
+        "salary": "$400–$750 per month",
+        "description": "Support search engine optimization activities through keyword research, content review, and basic reporting."
+    },
+    {
+        "id": 18,
+        "title": "Transcriptionist",
+        "company": "Remote Transcription Services",
+        "location": "Remote",
+        "type": "Contract",
+        "category": "Writing",
+        "salary": "$300–$650 per month",
+        "description": "Convert recorded audio into accurate written documents while following formatting and confidentiality guidelines."
+    }
+]
