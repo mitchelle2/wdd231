@@ -1,13 +1,13 @@
 /* =========================
    REMOTE CAREER HUB
    MOBILE STYLES
-   ========================= */
+========================= */
 
 /* ---------- Base ---------- */
 
 :root {
     --primary: #1E3A8A;
-    --secondary: #F97316;
+    --secondary: #C2410C;
     --white: #FFFFFF;
     --light-gray: #F4F4F4;
     --dark-gray: #333333;
@@ -59,7 +59,6 @@ button,
 a {
     -webkit-tap-highlight-color: transparent;
 }
-
 
 /* ---------- Header ---------- */
 
@@ -160,7 +159,6 @@ a {
     padding-left: calc(0.5rem - 4px);
 }
 
-
 /* ---------- General Sections ---------- */
 
 .section-container {
@@ -173,7 +171,7 @@ a {
     margin-bottom: 0.5rem;
     color: var(--secondary);
     font-family: "Poppins", sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 0.08em;
 }
@@ -181,7 +179,6 @@ a {
 .section-heading {
     margin-bottom: 2rem;
 }
-
 
 /* ---------- Hero ---------- */
 
@@ -228,7 +225,6 @@ a {
     align-items: flex-start;
 }
 
-
 /* ---------- Buttons ---------- */
 
 .button {
@@ -256,7 +252,7 @@ a {
 
 .primary-button:hover,
 .primary-button:focus {
-    background-color: #D95F0B;
+    background-color: #9A3412;
 }
 
 .secondary-button {
@@ -268,7 +264,6 @@ a {
 .secondary-button:focus {
     background-color: var(--light-gray);
 }
-
 
 /* ---------- Introduction ---------- */
 
@@ -287,7 +282,6 @@ a {
     margin-right: auto;
     margin-left: auto;
 }
-
 
 /* ---------- Resources ---------- */
 
@@ -335,7 +329,6 @@ a {
     color: var(--secondary);
 }
 
-
 /* ---------- Call to Action ---------- */
 
 .cta {
@@ -357,7 +350,6 @@ a {
 .cta .button {
     margin-top: 0.5rem;
 }
-
 
 /* ---------- Footer ---------- */
 
@@ -411,7 +403,6 @@ a {
     font-size: 0.9rem;
 }
 
-
 /* ---------- Accessibility ---------- */
 
 :focus-visible {
@@ -422,6 +413,8 @@ a {
 /* =================================
    OPPORTUNITIES PAGE
 ================================= */
+
+/* ---------- Page Header ---------- */
 
 .page-header {
     background: var(--light-gray);
@@ -439,23 +432,14 @@ a {
     line-height: 1.7;
 }
 
-.section-label {
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.08rem;
-    margin-bottom: 0.5rem;
-}
-
-
-/* Opportunities section */
+/* ---------- Opportunities Section ---------- */
 
 .opportunities-section {
     padding-top: 2rem;
     padding-bottom: 4rem;
 }
 
-
-/* Filter */
+/* ---------- Filter ---------- */
 
 .filter-container {
     display: flex;
@@ -473,20 +457,18 @@ a {
     padding: 0.75rem;
     border: 1px solid #999;
     border-radius: 5px;
-    background: white;
+    background: var(--white);
     font: inherit;
 }
 
-
-/* Results message */
+/* ---------- Results Message ---------- */
 
 #results-message {
     margin: 1rem 0;
     font-weight: 600;
 }
 
-
-/* Opportunity cards */
+/* ---------- Opportunity Cards ---------- */
 
 .opportunities-grid {
     display: grid;
@@ -495,8 +477,8 @@ a {
 }
 
 .opportunity-card {
-    background: white;
-    border: 1px solid #ddd;
+    background: var(--white);
+    border: 1px solid #DDD;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -512,7 +494,7 @@ a {
     padding: 0.3rem 0.6rem;
     border-radius: 20px;
     background: var(--primary);
-    color: white;
+    color: var(--white);
     font-size: 0.8rem;
     font-weight: 700;
 }
@@ -538,7 +520,7 @@ a {
     border: none;
     border-radius: 5px;
     background: var(--primary);
-    color: white;
+    color: var(--white);
     font: inherit;
     font-weight: 700;
     cursor: pointer;
@@ -549,18 +531,14 @@ a {
     opacity: 0.9;
 }
 
-
-/* Loading message */
+/* ---------- Loading Message ---------- */
 
 #loading-message {
     text-align: center;
     font-weight: 600;
 }
 
-
-/* =================================
-   MODAL
-================================= */
+/* ---------- Modal ---------- */
 
 #opportunity-modal {
     width: min(90%, 600px);
@@ -589,250 +567,7 @@ a {
     border: none;
     border-radius: 50%;
     background: var(--primary);
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-.modal-close:hover,
-.modal-close:focus {
-    opacity: 0.85;
-}
-
-.modal-content h2 {
-    padding-right: 2.5rem;
-}
-
-.modal-content dl {
-    margin-top: 1.5rem;
-}
-
-.modal-content dt {
-    margin-top: 1rem;
-    font-weight: 700;
-}
-
-.modal-content dd {
-    margin-left: 0;
-    margin-top: 0.25rem;
-    line-height: 1.5;
-}
-
-/* =================================
-   OPPORTUNITIES - LARGER SCREENS
-================================= */
-
-@media screen and (min-width: 641px) {
-
-    .page-header {
-        padding: 5rem 1rem;
-    }
-
-    .filter-container {
-        max-width: 400px;
-    }
-
-    #category-filter {
-        width: 100%;
-    }
-
-    .opportunities-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-
-@media screen and (min-width: 1025px) {
-
-    .opportunities-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .opportunity-card {
-        transition:
-            transform 0.2s ease,
-            box-shadow 0.2s ease;
-    }
-
-    .opportunity-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    }
-
-}
-
-/* =================================
-   OPPORTUNITIES PAGE
-================================= */
-
-.page-header {
-    background: var(--light-gray, #f3f5f7);
-    text-align: center;
-    padding: 3rem 1rem;
-}
-
-.page-header h1 {
-    margin-bottom: 1rem;
-}
-
-.page-header p {
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.7;
-}
-
-.section-label {
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.08rem;
-    margin-bottom: 0.5rem;
-}
-
-
-/* Opportunities section */
-
-.opportunities-section {
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-}
-
-
-/* Filter */
-
-.filter-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-.filter-container label {
-    font-weight: 700;
-}
-
-#category-filter {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #999;
-    border-radius: 5px;
-    background: white;
-    font: inherit;
-}
-
-
-/* Results message */
-
-#results-message {
-    margin: 1rem 0;
-    font-weight: 600;
-}
-
-
-/* Opportunity cards */
-
-.opportunities-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-}
-
-.opportunity-card {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-.card-content {
-    padding: 1.5rem;
-}
-
-.card-category {
-    display: inline-block;
-    margin: 0 0 0.75rem;
-    padding: 0.3rem 0.6rem;
-    border-radius: 20px;
-    background: var(--primary);
-    color: white;
-    font-size: 0.8rem;
-    font-weight: 700;
-}
-
-.opportunity-card h2 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-}
-
-.company {
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.opportunity-card p {
-    line-height: 1.6;
-}
-
-.learn-more {
-    width: 100%;
-    margin-top: 1rem;
-    padding: 0.75rem 1rem;
-    border: none;
-    border-radius: 5px;
-    background: var(--primary);
-    color: white;
-    font: inherit;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.learn-more:hover,
-.learn-more:focus {
-    opacity: 0.9;
-}
-
-
-/* Loading message */
-
-#loading-message {
-    text-align: center;
-    font-weight: 600;
-}
-
-
-/* =================================
-   MODAL
-================================= */
-
-#opportunity-modal {
-    width: min(90%, 600px);
-    max-height: 85vh;
-    padding: 0;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-#opportunity-modal::backdrop {
-    background: rgba(0, 0, 0, 0.65);
-}
-
-.modal-content {
-    position: relative;
-    padding: 2rem;
-}
-
-.modal-close {
-    position: absolute;
-    top: 0.75rem;
-    right: 0.75rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    border: none;
-    border-radius: 50%;
-    background: var(--primary);
-    color: white;
+    color: var(--white);
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -883,8 +618,7 @@ a {
     line-height: 1.7;
 }
 
-
-/* Form */
+/* ---------- Form ---------- */
 
 .career-form {
     max-width: 750px;
@@ -894,7 +628,7 @@ a {
 .career-form fieldset {
     margin-bottom: 2rem;
     padding: 1.5rem;
-    border: 1px solid #d5d5d5;
+    border: 1px solid #D5D5D5;
     border-radius: 10px;
 }
 
@@ -921,7 +655,7 @@ a {
     padding: 0.8rem;
     border: 1px solid #999;
     border-radius: 5px;
-    background: white;
+    background: var(--white);
     color: #222;
     font: inherit;
 }
@@ -934,7 +668,7 @@ a {
 .career-form select:focus,
 .career-form textarea:focus {
     outline: 3px solid rgba(30, 58, 138, 0.25);
-    border-color: var(--primary, #1e3a8a);
+    border-color: var(--primary);
 }
 
 .form-submit {
@@ -942,8 +676,8 @@ a {
     padding: 0.9rem 1.5rem;
     border: none;
     border-radius: 5px;
-    background: var(--primary, #1e3a8a);
-    color: white;
+    background: var(--primary);
+    color: var(--white);
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 1rem;
@@ -952,7 +686,7 @@ a {
 
 .form-submit:hover,
 .form-submit:focus {
-    background: var(--secondary, #f97316);
+    background: var(--secondary);
 }
 
 /* ================================
@@ -963,7 +697,7 @@ a {
     max-width: 700px;
     margin: 2rem auto 4rem;
     padding: 2rem;
-    background: white;
+    background: var(--white);
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
