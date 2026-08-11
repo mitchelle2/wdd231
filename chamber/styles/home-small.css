@@ -13,18 +13,20 @@ main {
    HERO
    ========================================= */
 
-.home-hero {
+.hero {
     position: relative;
-    margin-bottom: 2rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 
-.home-hero img {
+.hero img {
     display: block;
     width: 100%;
-    height: auto;
-    min-height: 300px;
+    height: 500px;
     object-fit: cover;
+    margin: 0;
 }
 
 .hero-content {
